@@ -20,12 +20,6 @@ class ViewLocationActivity : AppCompatActivity() {
         downloadButton = findViewById(R.id.button_downloadmap)
         aboutLocationButton = findViewById(R.id.button_aboutlocation)
 
-        // Aqui você deve obter a URL da imagem da resposta da API
-        val imageUrl = "data:image/png;base64,eyJtZXNzYWdlIjoiWm9vbSBsZXZlbCBtdXN0IGJlIGJldHdlZW4gMC0yMi4ifQ=="
-
-        // Use o Picasso para carregar e exibir a imagem na ImageView
-        Picasso.get().load(imageUrl).into(imageView)
-
         // Defina os cliques dos botões (download e informações) conforme necessário
         downloadButton.setOnClickListener {
             // Lógica para o download
